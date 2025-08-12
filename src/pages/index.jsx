@@ -1,3 +1,6 @@
+import 'leaflet/dist/leaflet.css';
+
+
 import Layout from "./Layout.jsx";
 
 import Home from "./Home";
