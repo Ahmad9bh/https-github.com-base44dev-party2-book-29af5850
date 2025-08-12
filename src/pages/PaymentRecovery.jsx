@@ -87,4 +87,13 @@ export default function PaymentRecovery() {
         });
 
         alert('Payment recovery abandoned. Your booking has been cancelled.');
-        window.location.href = createPageUrl('MyBooki
+        window.location.href = createPageUrl('MyBookings');
+      } catch (err) {
+        console.error('Failed to abandon recovery:', err);
+        alert('Failed to abandon recovery. Please try again.');
+      }
+    }
+  };
+
+  // ...rest of your component stays the same ...
+}
