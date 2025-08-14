@@ -1,3 +1,4 @@
+// src/components/common/FormatUtils.jsx
 
 // Translation dictionary
 const translations = {
@@ -121,13 +122,15 @@ const translations = {
     guest_count: 'Guest Count',
     start_time: 'Start Time',
     end_time: 'End Time',
+    event_type_label: 'Event Type',
     other: 'Other',
     contact_information: 'Contact Information',
     full_name: 'Full Name',
     email_label: 'Email',
     phone_number: 'Phone Number',
     special_requests_label: 'Special Requests',
-    special_requests_placeholder: 'Any special requirements? (e.g., decorations, catering needs)',
+    special_requests_placeholder:
+      'Any special requirements? (e.g., decorations, catering needs)',
     booking_summary: 'Booking Summary',
     total_amount: 'Total Amount',
     request_to_book: 'Request to Book',
@@ -136,12 +139,14 @@ const translations = {
     not_available: 'Not Available',
     error: 'Error',
     date_selection_required_title: 'Date Selection Required',
-    date_selection_required_description: 'Please select a date from the calendar first.',
+    date_selection_required_description:
+      'Please select a date from the calendar first.',
     complete_payment_title: 'Complete Your Payment',
     secure_payment_by_stripe: 'Secure payment powered by Stripe',
     time: 'Time',
     secure_payment: 'Secure Payment',
-    secure_payment_desc: 'Your payment information is protected with industry-standard encryption. We never store your credit card details on our servers.',
+    secure_payment_desc:
+      "Your payment information is protected with industry-standard encryption. We never store your credit card details on our servers.",
 
     // Currency names
     usd_currency: 'US Dollar',
@@ -165,64 +170,6 @@ const translations = {
     share: 'Share',
     go_back: 'Go Back',
     browse_other_venues: 'Browse Other Venues',
-
-    // Add Venue page
-    list_your_venue: 'List Your Venue',
-    share_amazing_space: 'Share your amazing space with the world and start earning.',
-    basic_information: 'Basic Information',
-    venue_title: 'Venue Title',
-    enter_venue_name_placeholder: 'e.g., The Grand Ballroom',
-    price_per_hour_label: 'Price per Hour',
-    currency: 'Currency',
-    maximum_capacity: 'Maximum Capacity',
-    enter_full_street_address: 'Enter the full street address',
-    enter_city_name: 'Enter the city name',
-    event_categories: 'Event Categories',
-    common_amenities: 'Common Amenities',
-    add_custom_amenity: 'Add Custom Amenity',
-    enter_amenity_name: 'Enter amenity name',
-    add: 'Add',
-    custom_amenities: 'Custom Amenities',
-    photos: 'Photos',
-    upload_images: 'Upload Images',
-    upload_images_description: 'Upload high-quality images. The first image will be the main one.',
-    main_photo: 'Main Photo',
-    video_tour_optional: 'Video Tour (Optional)',
-    youtube_vimeo_url: 'YouTube or Vimeo URL',
-    video_description: 'A video tour can significantly increase your bookings.',
-    submit_for_approval: 'Submit for Approval',
-    submitting_approval: 'Submitting...',
-    // Validation messages
-    fix_errors: 'Please correct the errors in the form.',
-    title_required: 'Venue title is required.',
-    title_min_chars: 'Title must be at least 3 characters long.',
-    description_required: 'Description is required.',
-    description_min_chars: 'Description must be at least 10 characters long.',
-    price_required: 'Price is required.',
-    price_positive_number: 'Price must be a positive number.',
-    price_unusually_high: 'The price seems unusually high, please double-check.',
-    capacity_required: 'Capacity is required.',
-    capacity_positive_number: 'Capacity must be a positive number.',
-    capacity_unusually_high: 'The capacity seems unusually high, please double-check.',
-    address_required: 'Address is required.',
-    address_complete: 'Please provide a more complete address.',
-    city_required: 'City is required.',
-    category_required: 'Please select at least one category.',
-    describe_venue_placeholder: 'Tell your guests about your space, what makes it special, and the type of events it\'s good for.',
-    // Category Management
-    add_custom_category: 'Add Custom Category',
-    enter_category_name: 'Enter category name',
-    category_added_successfully: 'Category "{category}" added successfully.',
-    category_already_exists: 'This category already exists.',
-    category_cannot_be_empty: 'Category name cannot be empty.',
-    // Toast messages
-    venue_submitted_approval: 'Venue submitted successfully! It is now pending approval.',
-    failed_submit_venue: 'Failed to submit venue. Please try again.',
-    amenity_added_successfully: 'Amenity added successfully.',
-    amenity_already_exists: 'This amenity already exists.',
-    amenity_cannot_be_empty: 'Amenity name cannot be empty.',
-    amenity_removed_successfully: 'Amenity removed successfully.',
-    image_upload_failed: 'Image upload failed. Please try again.',
 
     // Venue Details Page
     about_this_venue: 'About This Venue',
@@ -257,7 +204,8 @@ const translations = {
     found_bookings_count: 'Found {count} bookings',
     no_bookings_yet: 'No bookings yet',
     start_browsing_venues: 'Start browsing venues to make your first booking',
-    recently_made_booking_refresh_hint: 'If you recently made a booking, try refreshing the page',
+    recently_made_booking_refresh_hint:
+      'If you recently made a booking, try refreshing the page',
     loading_venue_details: 'Loading venue details...',
     tbd: 'TBD',
     booking_id_label: 'Booking ID',
@@ -272,9 +220,12 @@ const translations = {
     change_rejected_message: 'Your change request was rejected',
     cancellation_requested: 'Cancellation Requested',
     refund_amount_label: 'Refund Amount',
-    cancellation_approved_message: 'Your cancellation has been approved. Refund of',
+    cancellation_approved_message:
+      'Your cancellation has been approved. Refund of',
     is_being_processed_message: 'is being processed',
-    cancellation_rejected_message: 'Your cancellation request was rejected by the venue owner',
+    cancellation_rejected_message:
+      'Your cancellation request was rejected by the venue owner',
+    total_amount_label: 'Total Amount',
     contact_label: 'Contact',
     rejected: 'Rejected',
     payment_failed: 'Payment Failed',
@@ -283,23 +234,26 @@ const translations = {
     cancelled_pending_refund: 'Cancelled - Pending Refund',
     approved: 'Approved',
     bookings_loaded_success_title: 'Bookings Loaded',
-    bookings_loaded_success_description: 'Successfully loaded {count} bookings',
+    bookings_loaded_success_description:
+      'Successfully loaded {count} bookings',
     no_bookings_found_title: 'No Bookings Found',
-    no_bookings_found_description: 'You don\'t have any bookings yet',
+    no_bookings_found_description: "You don't have any bookings yet",
     failed_to_load_bookings_title: 'Failed to Load',
-    failed_to_load_bookings_description: 'Could not load your bookings. Please try again.',
+    failed_to_load_bookings_description:
+      'Could not load your bookings. Please try again.',
     please_log_in: 'Please Log In',
     please_log_in_message: 'You need to be logged in to view your bookings',
     location_not_specified: 'Location not specified',
     venue_details_unavailable: 'Venue details unavailable',
 
-    // New Owner Dashboard Texts
+    // Owner Dashboard Texts
     my_venues_login_required: 'You must be logged in to view your venues.',
     my_venues_title: 'My Venues',
     my_venues_subtitle: 'Manage your venue listings and bookings.',
     add_new_venue: 'Add New Venue',
     my_venues_listed_venues_title: 'Your Listed Venues',
-    my_venues_listed_venues_subtitle: 'Here are all the venues you have listed on Party2Go.',
+    my_venues_listed_venues_subtitle:
+      'Here are all the venues you have listed on Party2Go.',
     my_venues_no_venues_listed: "You haven't listed any venues yet.",
     bookings_dashboard_title: 'Bookings Dashboard',
     bookings_dashboard_subtitle: 'Manage all bookings for your venues.',
@@ -309,7 +263,8 @@ const translations = {
     approve: 'Approve',
     reject: 'Reject',
     booking_updated_toast_title: 'Booking Updated',
-    booking_updated_toast_desc: 'The booking for {contact_name} has been {status}.',
+    booking_updated_toast_desc:
+      'The booking for {contact_name} has been {status}.',
     booking_update_failed_toast_desc: 'Failed to update booking status.',
 
     // VenueCalendar Component
@@ -334,7 +289,7 @@ const translations = {
     failed_to_block_date: 'Failed to block date',
     failed_to_unblock_date: 'Failed to unblock date',
 
-    // Phase 4 additions
+    // Phase 4 additions (only unique keys kept)
     advanced_search: 'Advanced Search',
     trending_this_week: 'Trending This Week',
     recommended_for_you: 'Recommended for You',
@@ -373,18 +328,14 @@ const translations = {
     minimum_rating: 'Minimum Rating',
     venue_type: 'Venue Type',
     all_types: 'All Types',
-    amenities: 'Amenities',
-    event_date: 'Event Date',
-    select_date: 'Select date',
     search_radius_km: 'Search Radius: {distance} km',
     applied_filters: 'Applied Filters:',
     clear_all: 'Clear all',
     sign_in: 'Sign In',
-    sign_up: 'Sign Up',
     my_profile: 'My Profile',
-    my_venues_dashboard: 'My Venues Dashboard',
-    log_out: 'Log Out'
+    my_venues_dashboard: 'My Venues Dashboard'
   },
+
   ar: {
     // Navigation
     browse_venues: 'تصفح الأماكن',
@@ -404,7 +355,8 @@ const translations = {
     features_title: 'لماذا تختار Party2Book؟',
     features_subtitle: 'كل ما تحتاجه لتجربة حجز مثالية',
     feature_easy_discovery_title: 'اكتشاف سهل',
-    feature_easy_discovery_desc: 'اعثر على المكان المثالي باستخدام البحث والفلاتر القوية',
+    feature_easy_discovery_desc:
+      'اعثر على المكان المثالي باستخدام البحث والفلاتر القوية',
     feature_secure_booking_title: 'حجز آمن',
     feature_secure_booking_desc: 'مدفوعات آمنة وحجوزات مضمونة',
     feature_support_title: 'دعم على مدار الساعة',
@@ -418,7 +370,8 @@ const translations = {
 
     // CTA
     cta_title: 'جاهز للعثور على مكانك المثالي؟',
-    cta_subtitle: 'انضم لآلاف العملاء السعداء الذين وجدوا مساحة الحدث المثالية',
+    cta_subtitle:
+      'انضم لآلاف العملاء السعداء الذين وجدوا مساحة الحدث المثالية',
     cta_search_button: 'ابدأ البحث',
     cta_list_venue_button: 'أدرج مكانك',
 
@@ -458,7 +411,8 @@ const translations = {
     featured: 'مميز',
     all_venues: 'جميع الأماكن',
     search_results: 'نتائج البحث',
-    search_venues_placeholder: 'ابحث عن الأماكن بالاسم، المدينة، أو الكلمات المفتاحية...',
+    search_venues_placeholder:
+      'ابحث عن الأماكن بالاسم، المدينة، أو الكلمات المفتاحية...',
     grid: 'شبكة',
     map: 'خريطة',
     event_type: 'نوع الحدث',
@@ -491,12 +445,14 @@ const translations = {
     reset_filters: 'إعادة تعيين الفلاتر',
     loading: 'جاري التحميل...',
     error_occurred: 'حدث خطأ',
-    venue_not_found_message: 'المكان غير موجود. ربما تم حذفه أو لم يعد متاحًا.',
+    venue_not_found_message:
+      'المكان غير موجود. ربما تم حذفه أو لم يعد متاحًا.',
     venue_not_available_message: 'هذا المكان غير متاح حاليًا.',
     failed_to_load_venue_details: 'فشل تحميل تفاصيل المكان. يرجى المحاولة مرة أخرى.',
     sorry_venue_not_found_title: 'عذراً، المكان غير موجود',
     venue_not_available_title: 'المكان غير متوفر',
-    venue_not_available_description: 'هذا المكان غير متوفر حاليًا أو قد يكون قيد المراجعة.',
+    venue_not_available_description:
+      'هذا المكان غير متوفر حاليًا أو قد يكون قيد المراجعة.',
 
     // Booking Page
     event_details: 'تفاصيل الحدث',
@@ -505,14 +461,15 @@ const translations = {
     guest_count: 'عدد الضيوف',
     start_time: 'وقت البدء',
     end_time: 'وقت الانتهاء',
-    event_type_label: 'نوع الحدث',
+    event_type_label: 'نوع المناسبة',
     other: 'أخرى',
     contact_information: 'معلومات الاتصال',
     full_name: 'الاسم الكامل',
     email_label: 'البريد الإلكتروني',
     phone_number: 'رقم الهاتف',
     special_requests_label: 'طلبات خاصة',
-    special_requests_placeholder: 'هل لديك أي متطلبات خاصة؟ (مثال: زينة، احتياجات تموين)',
+    special_requests_placeholder:
+      'هل لديك أي متطلبات خاصة؟ (مثال: زينة، احتياجات تموين)',
     booking_summary: 'ملخص الحجز',
     total_amount: 'المبلغ الإجمالي',
     request_to_book: 'طلب حجز',
@@ -521,12 +478,14 @@ const translations = {
     not_available: 'غير متاح',
     error: 'خطأ',
     date_selection_required_title: 'يرجى اختيار تاريخ',
-    date_selection_required_description: 'يرجى اختيار تاريخ من التقويم أولاً.',
+    date_selection_required_description:
+      'يرجى اختيار تاريخ من التقويم أولاً.',
     complete_payment_title: 'أكمل عملية الدفع',
     secure_payment_by_stripe: 'دفع آمن بواسطة Stripe',
     time: 'الوقت',
     secure_payment: 'دفع آمن',
-    secure_payment_desc: 'معلومات الدفع الخاصة بك محمية بتشفير متوافق مع معايير الصناعة. نحن لا نقوم بتخزين تفاصيل بطاقتك الائتمانية على خوادمنا أبدًا.',
+    secure_payment_desc:
+      'معلومات الدفع الخاصة بك محمية بتشفير متوافق مع معايير الصناعة. نحن لا نقوم بتخزين تفاصيل بطاقتك الائتمانية على خوادمنا أبدًا.',
 
     // Currency names
     usd_currency: 'دولار أمريكي',
@@ -550,64 +509,6 @@ const translations = {
     share: 'مشاركة',
     go_back: 'العودة',
     browse_other_venues: 'تصفح أماكن أخرى',
-
-    // Add Venue page
-    list_your_venue: 'أدرج مكانك',
-    share_amazing_space: 'شارك مساحتك الرائعة مع العالم وابدأ في الكسب.',
-    basic_information: 'المعلومات الأساسية',
-    venue_title: 'اسم المكان',
-    enter_venue_name_placeholder: 'مثال: قاعة الاحتفالات الكبرى',
-    price_per_hour_label: 'السعر بالساعة',
-    currency: 'العملة',
-    maximum_capacity: 'السعة القصوى',
-    enter_full_street_address: 'أدخل عنوان الشارع بالكامل',
-    enter_city_name: 'أدخل اسم المدينة',
-    event_categories: 'فئات الفعاليات',
-    common_amenities: 'المرافق الشائعة',
-    add_custom_amenity: 'إضافة مرفق مخصص',
-    enter_amenity_name: 'أدخل اسم المرفق',
-    add: 'إضافة',
-    custom_amenities: 'المرافق المخصصة',
-    photos: 'الصور',
-    upload_images: 'تحميل الصور',
-    upload_images_description: 'قم بتحميل صور عالية الجودة. الصورة الأولى ستكون الرئيسية.',
-    main_photo: 'الصورة الرئيسية',
-    video_tour_optional: 'جولة بالفيديو (اختياري)',
-    youtube_vimeo_url: 'رابط يوتيوب أو فيميو',
-    video_description: 'جولة الفيديو يمكن أن تزيد من حجوزاتك بشكل كبير.',
-    submit_for_approval: 'إرسال للموافقة',
-    submitting_approval: 'جاري الإرسال...',
-    // Validation messages
-    fix_errors: 'يرجى تصحيح الأخطاء في النموذج.',
-    title_required: 'اسم المكان مطلوب.',
-    title_min_chars: 'يجب أن يكون العنوان 3 أحرف على الأقل.',
-    description_required: 'الوصف مطلوب.',
-    description_min_chars: 'يجب أن يكون الوصف 10 أحرف على الأقل.',
-    price_required: 'السعر مطلوب.',
-    price_positive_number: 'يجب أن يكون السعر رقمًا موجبًا.',
-    price_unusually_high: 'يبدو السعر مرتفعًا بشكل غير عادي، يرجى التحقق مرة أخرى.',
-    capacity_required: 'السعة مطلوبة.',
-    capacity_positive_number: 'يجب أن تكون السعة رقمًا موجبًا.',
-    capacity_unusually_high: 'تبدو السعة كبيرة بشكل غير عادي، يرجى التحقق مرة أخرى.',
-    address_required: 'العنوان مطلوب.',
-    address_complete: 'يرجى تقديم عنوان أكثر اكتمالاً.',
-    city_required: 'المدينة مطلوبة.',
-    category_required: 'يرجى اختيار فئة واحدة على الأقل.',
-    describe_venue_placeholder: 'أخبر ضيوفك عن مساحتك، وما يميزها، ونوع الفعاليات المناسبة لها.',
-    // Category Management
-    add_custom_category: 'إضافة فئة مخصصة',
-    enter_category_name: 'أدخل اسم الفئة',
-    category_added_successfully: 'تمت إضافة الفئة "{category}" بنجاح.',
-    category_already_exists: 'هذه الفئة موجودة بالفعل.',
-    category_cannot_be_empty: 'لا يمكن أن يكون اسم الفئة فارغًا.',
-    // Toast messages
-    venue_submitted_approval: 'تم إرسال المكان بنجاح! وهو الآن في انتظار الموافقة.',
-    failed_submit_venue: 'فشل إرسال المكان. حاول مرة اخرى.',
-    amenity_added_successfully: 'تمت إضافة المرفق بنجاح.',
-    amenity_already_exists: 'هذا المرفق موجود بالفعل.',
-    amenity_cannot_be_empty: 'لا يمكن أن يكون اسم المرفق فارغًا.',
-    amenity_removed_successfully: 'تمت إزالة المرفق بنجاح.',
-    image_upload_failed: 'فشل تحميل الصورة. حاول مرة اخرى.',
 
     // Venue Details Page
     about_this_venue: 'عن هذا المكان',
@@ -642,7 +543,8 @@ const translations = {
     found_bookings_count: 'تم العثور على {count} حجوزات',
     no_bookings_yet: 'لا توجد حجوزات بعد',
     start_browsing_venues: 'ابدأ بتصفح الأماكن لإجراء أول حجز',
-    recently_made_booking_refresh_hint: 'إذا قمت بحجز مؤخراً، جرب تحديث الصفحة',
+    recently_made_booking_refresh_hint:
+      'إذا قمت بحجز مؤخراً، جرب تحديث الصفحة',
     loading_venue_details: 'جاري تحميل تفاصيل المكان...',
     tbd: 'سيتم تحديدها',
     booking_id_label: 'رقم الحجز',
@@ -659,7 +561,9 @@ const translations = {
     refund_amount_label: 'مبلغ الاسترداد',
     cancellation_approved_message: 'تم قبول طلب الإلغاء. استرداد',
     is_being_processed_message: 'قيد المعالجة',
-    cancellation_rejected_message: 'تم رفض طلب الإلغاء من قبل مالك المكان',
+    cancellation_rejected_message:
+      'تم رفض طلب الإلغاء من قبل مالك المكان',
+    total_amount_label: 'المبلغ الإجمالي',
     contact_label: 'جهة الاتصال',
     rejected: 'مرفوض',
     payment_failed: 'فشل الدفع',
@@ -672,19 +576,21 @@ const translations = {
     no_bookings_found_title: 'لم يتم العثور على حجوزات',
     no_bookings_found_description: 'ليس لديك أي حجوزات بعد',
     failed_to_load_bookings_title: 'فشل في التحميل',
-    failed_to_load_bookings_description: 'لا يمكن تحميل حجوزاتك. يرجى المحاولة مرة أخرى.',
+    failed_to_load_bookings_description:
+      'لا يمكن تحميل حجوزاتك. يرجى المحاولة مرة أخرى.',
     please_log_in: 'يرجى تسجيل الدخول',
     please_log_in_message: 'تحتاج إلى تسجيل الدخول لعرض حجوزاتك',
     location_not_specified: 'الموقع غير محدد',
     venue_details_unavailable: 'تفاصيل المكان غير متوفرة',
 
-    // New Owner Dashboard Texts
+    // Owner Dashboard Texts
     my_venues_login_required: 'يجب عليك تسجيل الدخول لعرض أماكنك.',
     my_venues_title: 'أماكني',
     my_venues_subtitle: 'إدارة قوائم أماكنك وحجوزاتك.',
     add_new_venue: 'إضافة مكان جديد',
     my_venues_listed_venues_title: 'الأماكن المدرجة الخاصة بك',
-    my_venues_listed_venues_subtitle: 'هنا جميع الأماكن التي أدرجتها في Party2Go.',
+    my_venues_listed_venues_subtitle:
+      'هنا جميع الأماكن التي أدرجتها في Party2Go.',
     my_venues_no_venues_listed: 'لم تقم بإدراج أي أماكن بعد.',
     bookings_dashboard_title: 'لوحة تحكم الحجوزات',
     bookings_dashboard_subtitle: 'إدارة جميع حجوزات أماكنك.',
@@ -719,7 +625,7 @@ const translations = {
     failed_to_block_date: 'فشل حظر التاريخ',
     failed_to_unblock_date: 'فشل إلغاء حظر التاريخ',
 
-    // Phase 4 Arabic additions
+    // Phase 4 Arabic additions (only unique keys kept)
     advanced_search: 'البحث المتقدم',
     trending_this_week: 'الأكثر رواجاً هذا الأسبوع',
     recommended_for_you: 'موصى لك',
@@ -758,27 +664,22 @@ const translations = {
     minimum_rating: 'أقل تقييم',
     venue_type: 'نوع المكان',
     all_types: 'جميع الأنواع',
-    amenities: 'المرافق',
-    event_date: 'تاريخ الحدث',
-    select_date: 'اختر تاريخاً',
     search_radius_km: 'نطاق البحث: {distance} كم',
     applied_filters: 'المرشحات المطبقة:',
     clear_all: 'مسح الكل',
     sign_in: 'تسجيل الدخول',
-    sign_up: 'إنشاء حساب',
     my_profile: 'ملفي الشخصي',
-    my_venues_dashboard: 'لوحة إدارة أماكني',
-    log_out: 'تسجيل الخروج'
+    my_venues_dashboard: 'لوحة إدارة أماكني'
   }
 };
 
 // Get localized text with fallback to English and variable replacement
 export const getLocalizedText = (key, language = 'en', variables = {}) => {
-  const langDict = translations[language] || translations['en'];
-  let text = langDict[key] || translations['en'][key] || key;
+  const langDict = translations[language] || translations.en;
+  let text = langDict[key] || translations.en[key] || key;
 
   // Replace placeholders like {count}
-  Object.keys(variables).forEach(varKey => {
+  Object.keys(variables).forEach((varKey) => {
     const regex = new RegExp(`{${varKey}}`, 'g');
     text = text.replace(regex, variables[varKey]);
   });
@@ -799,13 +700,23 @@ const exchangeRates = {
 
 // Convert currency amounts
 export const convertCurrency = (amount, fromCurrency, toCurrency) => {
-  if (amount === null || amount === undefined || isNaN(amount) || fromCurrency === toCurrency) return amount;
+  if (
+    amount === null ||
+    amount === undefined ||
+    isNaN(amount) ||
+    fromCurrency === toCurrency
+  )
+    return amount;
 
   const fromRate = exchangeRates[fromCurrency];
   const toRate = exchangeRates[toCurrency];
 
   if (!fromRate || !toRate) {
-    console.warn(`Currency conversion: Missing exchange rate for ${!fromRate ? fromCurrency : toCurrency}`);
+    console.warn(
+      `Currency conversion: Missing exchange rate for ${
+        !fromRate ? fromCurrency : toCurrency
+      }`
+    );
     return amount; // Or throw an error, depending on desired behavior
   }
 
@@ -830,11 +741,11 @@ export const formatCurrency = (amount, currency = 'USD', language = 'en') => {
   const symbol = currencySymbols[currency] || currency;
 
   // Enhanced number formatting with proper locale
-  const locale = language === 'ar' ? 'ar-SA' : 'en-US'; // Default to en-US if language is not 'ar'
+  const locale = language === 'ar' ? 'ar-SA' : 'en-US';
 
   const formattedAmount = parseFloat(amount).toLocaleString(locale, {
     minimumFractionDigits: 0,
-    maximumFractionDigits: amount % 1 === 0 ? 0 : 2 // Show 0 decimals for whole numbers, up to 2 for others
+    maximumFractionDigits: amount % 1 === 0 ? 0 : 2
   });
 
   // For Arabic and RTL currencies, put currency after the amount
@@ -869,7 +780,12 @@ export const formatDate = (date, language = 'en', format = 'medium') => {
   const options = {
     short: { month: 'short', day: 'numeric' },
     medium: { year: 'numeric', month: 'short', day: 'numeric' },
-    long: { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
+    long: {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    }
   };
 
   return dateObj.toLocaleDateString(locale, options[format] || options.medium);
@@ -882,11 +798,8 @@ export const formatTime = (time, language = 'en') => {
   const locale = language === 'ar' ? 'ar-SA' : 'en-US';
   let timeObj;
 
-  // If time is a string, assume it's a time string (e.g., "14:30") and combine with a dummy date
-  // Otherwise, assume it's already a Date object
   if (typeof time === 'string') {
     try {
-      // For accurate parsing, ensure a full date string. Using 2000-01-01 as a base.
       timeObj = new Date(`2000-01-01T${time}`);
     } catch (e) {
       console.warn(`Invalid time string provided to formatTime: ${time}`, e);
@@ -899,7 +812,6 @@ export const formatTime = (time, language = 'en') => {
     return '';
   }
 
-  // Check if timeObj is a valid date
   if (isNaN(timeObj.getTime())) {
     console.warn(`Could not parse time to a valid Date object: ${time}`);
     return '';
@@ -908,59 +820,67 @@ export const formatTime = (time, language = 'en') => {
   return timeObj.toLocaleTimeString(locale, {
     hour: '2-digit',
     minute: '2-digit',
-    hour12: language === 'en' // Use 12-hour format for English, 24-hour for Arabic
+    hour12: language === 'en'
   });
 };
 
 // Get currency suggestion based on country code
 export const getCurrencyForCountry = (countryCode) => {
   const countryCurrencyMap = {
-    'US': 'USD',
-    'SA': 'SAR',
-    'AE': 'AED',
-    'GB': 'GBP',
-    'CA': 'CAD',
-    'AU': 'AUD',
-    'DE': 'EUR',
-    'FR': 'EUR',
-    'IT': 'EUR',
-    'ES': 'EUR',
-    'NL': 'EUR',
-    'BE': 'EUR',
-    'AT': 'EUR',
-    'PT': 'EUR',
-    'FI': 'EUR',
-    'IE': 'EUR'
+    US: 'USD',
+    SA: 'SAR',
+    AE: 'AED',
+    GB: 'GBP',
+    CA: 'CAD',
+    AU: 'AUD',
+    DE: 'EUR',
+    FR: 'EUR',
+    IT: 'EUR',
+    ES: 'EUR',
+    NL: 'EUR',
+    BE: 'EUR',
+    AT: 'EUR',
+    PT: 'EUR',
+    FI: 'EUR',
+    IE: 'EUR'
   };
 
-  return countryCurrencyMap[countryCode.toUpperCase()] || 'USD'; // Ensure countryCode is uppercase for lookup
+  return countryCurrencyMap[countryCode.toUpperCase()] || 'USD';
 };
 
 // Get language suggestion based on country code
 export const getLanguageForCountry = (countryCode) => {
   const countryLanguageMap = {
-    'SA': 'ar',
-    'AE': 'ar',
-    'QA': 'ar',
-    'KW': 'ar',
-    'BH': 'ar',
-    'OM': 'ar',
-    'JO': 'ar',
-    'LB': 'ar',
-    'SY': 'ar',
-    'IQ': 'ar',
-    'EG': 'ar',
-    'LY': 'ar',
-    'TN': 'ar',
-    'DZ': 'ar',
-    'MA': 'ar'
+    SA: 'ar',
+    AE: 'ar',
+    QA: 'ar',
+    KW: 'ar',
+    BH: 'ar',
+    OM: 'ar',
+    JO: 'ar',
+    LB: 'ar',
+    SY: 'ar',
+    IQ: 'ar',
+    EG: 'ar',
+    LY: 'ar',
+    TN: 'ar',
+    DZ: 'ar',
+    MA: 'ar'
   };
 
-  return countryLanguageMap[countryCode.toUpperCase()] || 'en'; // Ensure countryCode is uppercase for lookup
+  return countryLanguageMap[countryCode.toUpperCase()] || 'en';
 };
 
 // New utility for calculating venue prices considering dynamic rules and discounts
-export const calculateVenuePrice = async (venue, pricingRules, date, startTime, endTime, discountCode) => {
+export const calculateVenuePrice = async (
+  venue,
+  pricingRules,
+  date,
+  startTime,
+  endTime,
+  discountCode
+) => {
+  // NOTE: explicit .js for ESM on Linux/Vercel
   const { VenuePricing } = await import('@/api/entities/index.js');
   const { DiscountCode } = await import('@/api/entities/index.js');
   const { isSameDay, parse, getDay } = await import('date-fns');
@@ -974,7 +894,7 @@ export const calculateVenuePrice = async (venue, pricingRules, date, startTime, 
     appliedRule: null,
     subtotal: 0,
     discountAmount: 0,
-    discountMessage: '',
+    discountMessage: ''
   };
 
   // 1. Calculate hours
@@ -983,10 +903,10 @@ export const calculateVenuePrice = async (venue, pricingRules, date, startTime, 
     const end = parse(endTime, 'HH:mm', new Date());
     details.hours = (end - start) / (1000 * 60 * 60);
     if (details.hours < 0) details.hours = 0;
-  } catch (e) {
+  } catch {
     details.hours = 0;
   }
-  
+
   details.baseTotal = basePricePerHour * details.hours;
   let adjustedPricePerHour = basePricePerHour;
 
@@ -995,23 +915,30 @@ export const calculateVenuePrice = async (venue, pricingRules, date, startTime, 
     const eventDate = new Date(date);
     const dayOfWeek = getDay(eventDate); // 0 = Sunday, 6 = Saturday
 
-    const applicableRule = pricingRules.find(rule => {
-      const ruleAppliesToDay = !rule.days_of_week || rule.days_of_week.length === 0 || rule.days_of_week.includes(dayOfWeek);
-      const ruleAppliesToDate = (!rule.start_date || eventDate >= new Date(rule.start_date)) && (!rule.end_date || eventDate <= new Date(rule.end_date));
+    const applicableRule = pricingRules.find((rule) => {
+      const ruleAppliesToDay =
+        !rule.days_of_week ||
+        rule.days_of_week.length === 0 ||
+        rule.days_of_week.includes(dayOfWeek);
+      const ruleAppliesToDate =
+        (!rule.start_date || eventDate >= new Date(rule.start_date)) &&
+        (!rule.end_date || eventDate <= new Date(rule.end_date));
       return rule.is_active && ruleAppliesToDay && ruleAppliesToDate;
     });
 
     if (applicableRule) {
       details.appliedRule = applicableRule;
       if (applicableRule.price_modifier_type === 'percentage') {
-        adjustedPricePerHour *= (1 + applicableRule.price_modifier_value / 100);
-      } else { // fixed_amount
+        adjustedPricePerHour *= 1 + applicableRule.price_modifier_value / 100;
+      } else {
+        // fixed_amount
         adjustedPricePerHour += applicableRule.price_modifier_value;
       }
     }
   }
 
-  details.dynamicAdjustment = (adjustedPricePerHour * details.hours) - details.baseTotal;
+  details.dynamicAdjustment =
+    adjustedPricePerHour * details.hours - details.baseTotal;
   details.subtotal = adjustedPricePerHour * details.hours;
 
   // 3. Apply discount code
@@ -1023,23 +950,27 @@ export const calculateVenuePrice = async (venue, pricingRules, date, startTime, 
         is_active: true
       });
       const validCode = codes[0];
-      
+
       if (validCode) {
         if (validCode.expires_at && new Date(validCode.expires_at) < new Date()) {
           details.discountMessage = 'This discount code has expired.';
         } else {
           if (validCode.discount_type === 'percentage') {
             details.discountAmount = details.subtotal * (validCode.value / 100);
-          } else { // fixed_amount
+          } else {
+            // fixed_amount
             details.discountAmount = validCode.value;
           }
-          details.discountMessage = `Discount of ${formatCurrency(details.discountAmount, venue.currency)} applied.` ;
+          details.discountMessage = `Discount of ${formatCurrency(
+            details.discountAmount,
+            venue.currency
+          )} applied.`;
         }
       } else {
         details.discountMessage = 'Invalid discount code.';
       }
-    } catch(err) {
-      console.error("Error validating discount code:", err);
+    } catch (err) {
+      console.error('Error validating discount code:', err);
       details.discountMessage = 'Could not validate code.';
     }
   }
