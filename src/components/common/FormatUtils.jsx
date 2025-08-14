@@ -968,8 +968,8 @@ export const getLanguageForCountry = (countryCode) => {
 
 // New utility for calculating venue prices considering dynamic rules and discounts
 export const calculateVenuePrice = async (venue, pricingRules, date, startTime, endTime, discountCode) => {
-  const { VenuePricing } = await import('@/api/entities');
-  const { DiscountCode } = await import('@/api/entities');
+  const { VenuePricing } = await import('@/api/entities/index.js');
+  const { DiscountCode } = await import('@/api/entities/index.js');
   const { isSameDay, parse, getDay } = await import('date-fns');
 
   const basePricePerHour = venue.price_per_hour;
